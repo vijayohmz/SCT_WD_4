@@ -1,0 +1,125 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 800px;
+  background: linear-gradient(135deg, #ffffff, #ffe3e3);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+  border: 2px solid #ffb3b3;
+}
+
+h1 {
+  color: #e91e63;
+  background: linear-gradient(to right, #ff6f91, #ff9671);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.new-list input {
+  padding: 10px;
+  width: 60%;
+  margin-right: 10px;
+  border-radius: 10px;
+  border: 1px solid #ffb6b9;
+  background-color: #fff0f5;
+}
+
+.new-list button {
+  padding: 10px 15px;
+  background-color: #f06292;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.new-list button:hover {
+  background-color: #ec407a;
+}
+
+.list {
+  margin-top: 20px;
+  border-top: 3px dashed #ff9aa2;
+  padding-top: 15px;
+  background-color: #fff5f5;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.task-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 0;
+  background: #fcefee;
+  padding: 10px;
+  border-radius: 8px;
+  border-left: 5px solid #f48fb1;
+}
+
+.task-item input[type='text'],
+.task-item input[type='datetime-local'] {
+  margin: 5px;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ffcdd2;
+  background-color: #fff;
+}
+
+.task-item input[type='checkbox'] {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+.task-item button {
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+button.edit {
+  background-color: #ff9800;
+}
+
+button.edit:hover {
+  background-color: #fb8c00;
+}
+
+button.delete {
+  background-color: #e53935;
+}
+
+button.delete:hover {
+  background-color: #c62828;
+}
+
+button.add-task {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #7e57c2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.add-task:hover {
+  background-color: #673ab7;
+}
